@@ -2,12 +2,15 @@
 // Результат присвойте переменной sum
 
 // your code
-let sum
+let sum = 0
 
-let result = 0
+let number = 0
 
-while (result < 20) {
-    result = result + 1
+while (namber < 20) {
+    namber = namber + 1
+    sum = sum + namber
+    console.log(sum)
+    
 }
 
-console.log(sum = result)
+console.log(sum)
