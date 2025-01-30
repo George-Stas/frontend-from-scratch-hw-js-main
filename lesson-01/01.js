@@ -6,9 +6,9 @@ let sum = 0
 
 let number = 0
 
-while (namber < 20) {
-    namber = namber + 1
-    sum = sum + namber
+while (number < 20) {
+    number = number + 1
+    sum = sum + number
     console.log(sum)
     
 }
