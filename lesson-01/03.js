@@ -9,9 +9,11 @@ let sum = 0
 
 let num = 0
 
-while(num < 20 && num % 2 !== 0) {
+while(num < 20) {
   num++
-  console.log(sum = sum + num)
+  if(num % 2 !== 0) {
+    sum = sum + num
+  }
 }
 
 console.log(sum)
