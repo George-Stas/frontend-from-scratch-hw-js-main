@@ -9,18 +9,19 @@
 
 // тестовые данные (значения можно менять)
 const isAdmin = true
-const isVerifiedUser = true
+const isVerifiedUser = false
 const hasSpecialPermission = true
-const hasTemporaryPass = true
+const hasTemporaryPass = false
 
-let specStatus
-let specPermission
+let specStatus = true
+let specPermission = true
 
 let isAccess
 
 // your code
 
 if((specStatus === isAdmin || specStatus === isVerifiedUser) && (specPermission === hasSpecialPermission || specPermission === hasTemporaryPass)) {
+    console.log(specStatus, specPermission)
     isAccess = true
 } else {
     isAccess = false
