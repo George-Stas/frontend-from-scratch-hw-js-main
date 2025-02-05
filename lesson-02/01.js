@@ -13,11 +13,14 @@ const isVerifiedUser = true
 const hasSpecialPermission = true
 const hasTemporaryPass = true
 
+let specStatus
+let specPermission
+
 let isAccess
 
 // your code
 
-if((isAdmin === false || isVerifiedUser === false) && (hasSpecialPermission === true || hasTemporaryPass === false)) {
+if((specStatus === isAdmin || specStatus === isVerifiedUser) && (specPermission === hasSpecialPermission || specPermission === hasTemporaryPass)) {
     isAccess = true
 } else {
     isAccess = false
