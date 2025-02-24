@@ -24,8 +24,8 @@ function includesElement(array, element) {
     return false
 }
 
-const ar = includesElement([1, 2, 3], 2)
+// const incElem = includesElement([1, 2, 3], 2)
 
-console.log(ar);
+// console.log(incElem);
 
 
