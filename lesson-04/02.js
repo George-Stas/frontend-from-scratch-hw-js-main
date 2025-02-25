@@ -15,4 +15,13 @@
 Подсказка: можно использовать функцию `includesElement`, которую мы написали ранее. Переписывать её не нужно, она доступна по всему проекту за счёт hoisting.
 */
 
-function findUniqueElements() {}
+function findUniqueElements(array) {
+    let find = array.filter(function(elem, index) {
+        return index === array.indexOf(elem)
+    })
+    return find
+}
+
+const result = findUniqueElements([1, 2, 3, 2, 1, 4])
+
+console.log(result)
