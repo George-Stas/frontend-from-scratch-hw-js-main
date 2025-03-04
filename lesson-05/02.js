@@ -39,14 +39,15 @@ const gallery = {
 
 function updateGallery(object, artwork, newText) {
   if(object.hasOwnProperty(artwork)){
-    console.log(object.artwork = newText)
+    return object[artwork] = newText
+    
   } else {
-    console.log(object.artwork = newText)
+    return object[artwork] = newText
   }
 }
 
 // console.log(updateGallery())
 
-updateGallery(gallery, 'Mona Li', 'Leonardo da Vinci, 1503-1506')
+updateGallery(gallery, 'Mona Lis', 'Leonardo da Vinci, 1503-1506')
 
 console.log(gallery)
