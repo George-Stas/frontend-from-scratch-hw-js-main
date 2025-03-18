@@ -6,14 +6,14 @@
 function isNumeric(str) {
   // your code
   if(Number(str)) {
-    console.log('true')
+    return true
   } else {
-    console.log('false')
+    return false
   }
-  return
+  
 }
 
-const result = isNumeric("1.23e4")
+const result = isNumeric("111")
 
 console.log(result)
 
