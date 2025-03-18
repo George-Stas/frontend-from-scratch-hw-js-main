@@ -13,7 +13,9 @@ function isNumeric(str) {
   return
 }
 
-const result = isNumeric("")
+const result = isNumeric("1.23e4")
+
+console.log(result)
 
 // console.log(isNumeric("123")) // Ожидаемый результат: true
 // console.log(isNumeric("12.3")) // Ожидаемый результат: true
