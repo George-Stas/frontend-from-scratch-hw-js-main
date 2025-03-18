@@ -11,4 +11,15 @@
 
 function truncate(str, maxLength) {
   // your code
+  const arr = str.split('')
+  console.log(arr.length)
+  if(arr.length < maxLength) {
+    console.log(str)
+  } else {
+    const newStr = `${arr.slice(0, maxLength).join('')}...`
+    console.log(newStr)
+  }
+  return 
 }
+
+const result = truncate("Вот, что мне действительно нравится в этом", 20)
