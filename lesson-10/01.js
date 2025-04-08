@@ -24,7 +24,7 @@
 const model = {
   movies: [],
   addMovie(title, description) {
-    const id = Math.random()
+    const id = Math.random().toString()
     const newMovie = { id, title, description }
     this.movies.push(newMovie)
     view.renderMovies(this.movies)
@@ -35,6 +35,8 @@ const model = {
     view.renderMovies(this.movies)
   }
 }
+
+
 
 const view = {
   init() {
@@ -63,6 +65,7 @@ const view = {
         controller.deleteMovie(movieId); // Передаем id в контроллер
       }
     })
+
   },
   renderMovies(movies) {
     const list = document.querySelector('.list')
